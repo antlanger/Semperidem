@@ -1,5 +1,7 @@
 #pragma once
 
+//Implementation of the mappers for Windows.
+
 #ifdef SI_PLATFORM_WINDOWS
 	#ifdef SI_BUILD_DLL
 		#define SEMPERIDEM_API __declspec(dllexport)
@@ -10,4 +12,3 @@
 	#error Semperidem only supports Windows at the moment!
 #endif
 
-//Mappers so we don't have to include everytime __declspec(dllexport/import)

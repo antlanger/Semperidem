@@ -1,5 +1,7 @@
+//Example call of the header file, which we created, so we don't have to use
+//relative paths.
 #include <Semperidem.h>
-//So we don't have to use relative paths
+
 
 class Sandbox : public Semperidem::Application
 {

@@ -7,7 +7,6 @@ namespace Semperidem {
 	public: 
 		Application();
 		virtual ~Application();
-
 		void Run();
 	};
 
