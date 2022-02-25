@@ -19,12 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Semperidem\Log.h" />
     <ClInclude Include="src\Semperidem.h" />
     <ClInclude Include="src\Semperidem\Application.h" />
     <ClInclude Include="src\Semperidem\Core.h" />
     <ClInclude Include="src\Semperidem\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Semperidem\Log.cpp" />
     <ClCompile Include="src\Semperidem\Application.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -129,6 +131,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>SI_PLATFORM_WINDOWS;SI_BUILD_DLL;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Semperidem\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -143,6 +146,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>SI_PLATFORM_WINDOWS;SI_BUILD_DLL;</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Semperidem\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
