@@ -9,10 +9,12 @@ extern Semperidem::Application* Semperidem::CreateApplication();
 #ifdef SI_PLATFORM_WINDOWS
 	int main(int argc, char** argv)
 	{
+		//Initialize Logger 
 		Semperidem::Log::Init();
 		SI_CORE_WARN("This is a warn log!");
 		SI_CLIENT_INFO("This is a info log!");
 
+		//Create Application
 		printf("Engine started...");
 		auto app = Semperidem::CreateApplication();
 		app->Run();
