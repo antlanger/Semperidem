@@ -4,6 +4,9 @@
     <Filter Include="Semperidem">
       <UniqueIdentifier>{30F698B3-1CAE-DA00-85B5-B35C718C75F1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Semperidem\Events">
+      <UniqueIdentifier>{14CCF512-80E2-F3A8-C959-7FCA35AFC430}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Semperidem.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\Semperidem\EntryPoint.h">
       <Filter>Semperidem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Semperidem\Events\ApplicationEvent.h">
+      <Filter>Semperidem\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Semperidem\Events\Event.h">
+      <Filter>Semperidem\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Semperidem\Events\KeyEvent.h">
+      <Filter>Semperidem\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Semperidem\Events\MouseEvent.h">
+      <Filter>Semperidem\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Semperidem\Log.h">
       <Filter>Semperidem</Filter>
