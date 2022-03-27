@@ -34,6 +34,7 @@
     <ClInclude Include="src\Semperidem\Log.h">
       <Filter>Semperidem</Filter>
     </ClInclude>
+    <ClInclude Include="src\sipch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Semperidem\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\Semperidem\Log.cpp">
       <Filter>Semperidem</Filter>
     </ClCompile>
+    <ClCompile Include="src\sipch.cpp" />
   </ItemGroup>
 </Project>

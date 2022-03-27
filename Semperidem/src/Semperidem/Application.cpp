@@ -1,3 +1,4 @@
+#include "sipch.h"
 #include "Application.h"
 #include "Semperidem/Events/ApplicationEvent.h"
 #include "Semperidem/Log.h"

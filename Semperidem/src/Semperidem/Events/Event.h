@@ -2,9 +2,6 @@
 
 #include "Semperidem/Core.h"
 
-#include <string>
-#include <functional>
-
 namespace Semperidem {
 
 	//Events are currently BLOCKING, which means when an event occurs the whole application

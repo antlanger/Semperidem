@@ -18,6 +18,9 @@ project "Semperidem"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "sipch.h"
+	pchsource "Semperidem/src/sipch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",
