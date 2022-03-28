@@ -2,28 +2,26 @@
 #include "Application.h"
 #include "Semperidem/Events/ApplicationEvent.h"
 #include "Semperidem/Log.h"
+#include "GLFW/glfw3.h"
 
 namespace Semperidem {
-	Application::Application() {
+	Application::Application() 
+	{
+		m_Window = std::unique_ptr<Window>(Window::Create());
+	}
+
+	Application::~Application() 
+	{
 
 	}
 
-	Application::~Application() {
-
-	}
-
-	void Application::Run() {
-
-		WindowResizeEvent e(1280, 720);
-		if (e.IsInCategory(EventCategoryApplication))
+	void Application::Run() 
+	{
+		while (m_Running) 
 		{
-			SI_CLIENT_TRACE(e);
-		}
-		if (e.IsInCategory(EventCategoryInput))
-		{
-			SI_CLIENT_TRACE(e);
-		}
-
-		while (true);
+			glClearColor(1, 0, 1, 1);
+			glClear(GL_COLOR_BUFFER_BIT);
+			m_Window->OnUpdate();
+		}		
 	}
 }
