@@ -69,8 +69,7 @@ namespace Semperidem {
 		{
 			return GetCategoryFlags() & category;
 		}
-	
-	protected:
+
 		// Indicates if an event was handled or not
 		bool m_Handled = false;
 	};

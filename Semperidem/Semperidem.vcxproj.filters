@@ -40,6 +40,12 @@
     <ClInclude Include="src\Semperidem\Events\MouseEvent.h">
       <Filter>Semperidem\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Semperidem\Layer.h">
+      <Filter>Semperidem</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Semperidem\LayerStack.h">
+      <Filter>Semperidem</Filter>
+    </ClInclude>
     <ClInclude Include="src\Semperidem\Log.h">
       <Filter>Semperidem</Filter>
     </ClInclude>
@@ -53,6 +59,12 @@
       <Filter>Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\Semperidem\Application.cpp">
+      <Filter>Semperidem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Semperidem\Layer.cpp">
+      <Filter>Semperidem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Semperidem\LayerStack.cpp">
       <Filter>Semperidem</Filter>
     </ClCompile>
     <ClCompile Include="src\Semperidem\Log.cpp">

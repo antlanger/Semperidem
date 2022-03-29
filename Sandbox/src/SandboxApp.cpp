@@ -2,19 +2,31 @@
 //relative paths.
 #include <Semperidem.h>
 
+class SemperidemLayer : public Semperidem::Layer
+{
+public:
+	SemperidemLayer() : Layer("Semperidem_Example_Layer ") {}
+
+	void OnUpdate() override
+	{
+		SI_CLIENT_INFO("Semperidem_Example_Layer::Update");
+	}
+
+	void OnEvent(Semperidem::Event& event) override
+	{
+		SI_CLIENT_TRACE("{0}", event);
+	}
+};
 
 class Sandbox : public Semperidem::Application
 {
 public:
-	Sandbox()
+	Sandbox() 
 	{
-
+		PushLayer(new SemperidemLayer());
 	}
 
-	~Sandbox()
-	{
-
-	}
+	~Sandbox() {}
 };
 
 Semperidem::Application* Semperidem::CreateApplication()

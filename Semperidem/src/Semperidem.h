@@ -5,6 +5,7 @@
 //path in the client applications.
 #include <stdio.h>
 #include "Semperidem/Application.h"
+#include "Semperidem/Layer.h"
 #include "Semperidem/Log.h"
 
 //-------------------------------- ENTRY POINT ----------------------------------
