@@ -5,6 +5,8 @@
 #include "Semperidem/Events/KeyEvent.h"
 #include "Semperidem/Events/MouseEvent.h"
 
+#include "glad/glad.h"
+
 namespace Semperidem {
 
 	static bool s_GLFWInitialized = false;
@@ -47,6 +49,8 @@ namespace Semperidem {
 
 		m_Window = glfwCreateWindow((int)props.Width, (int)props.Height, m_Data.Title.c_str(), nullptr, nullptr);
 		glfwMakeContextCurrent(m_Window);
+		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
+		SI_CORE_ASSERT(status, "Failed to initialize GLAD!");
 		glfwSetWindowUserPointer(m_Window, &m_Data);
 		SetVSync(true);
 

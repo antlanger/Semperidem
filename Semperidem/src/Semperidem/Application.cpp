@@ -1,7 +1,7 @@
 #include "sipch.h"
 #include "Application.h"
 #include "Semperidem/Log.h"
-#include "GLFW/glfw3.h"
+#include "glad/glad.h"
 
 namespace Semperidem {
 

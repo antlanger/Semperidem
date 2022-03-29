@@ -12,8 +12,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 IncludeDir = {}
 IncludeDir["GLFW"] = "Semperidem/vendor/GLFW/include"
+IncludeDir["GLAD"] = "Semperidem/vendor/GLAD/include"
 
 include "Semperidem/vendor/GLFW"
+include "Semperidem/vendor/GLAD"
 
 project "Semperidem"
 	location "Semperidem"
@@ -36,12 +38,14 @@ project "Semperidem"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.GLAD}"
 	}
 
 	links
 	{
 		"GLFW",
+		"GLAD",
 		"opengl32.lib"
 	}
 
@@ -53,7 +57,8 @@ project "Semperidem"
 		defines
 		{
 			"SI_PLATFORM_WINDOWS",
-			"SI_BUILD_DLL"
+			"SI_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 		}
 
 		postbuildcommands
