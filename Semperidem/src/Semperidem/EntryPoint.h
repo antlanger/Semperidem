@@ -12,7 +12,8 @@ extern Semperidem::Application* Semperidem::CreateApplication();
 		//Initialize Logger 
 		Semperidem::Log::Init();
 		SI_CORE_WARN("This is a warn log!");
-		SI_CLIENT_INFO("This is a info log!");
+		SI_CORE_ERROR("This is an error log!");
+		SI_CLIENT_INFO("This is an info log!");
 
 		//Create Application
 		printf("Engine started...");
