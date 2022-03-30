@@ -3,10 +3,10 @@
 Hello and welcome to my game engine "Semperidem", which means "always the same".
 It is written in C++ and it is my first attempt creating a game engine.
 
-I followed the instructions of "The Cherno" on [Youtube](https://www.youtube.com/watch?v=JxIZbV_XjAs&list=PLlrATfBNZ98dC-V-N3m0Go4deliWHPFwT). I watched all videos till ImGui (included).
+I followed the instructions of "The Cherno" on [Youtube](https://www.youtube.com/watch?v=JxIZbV_XjAs&list=PLlrATfBNZ98dC-V-N3m0Go4deliWHPFwT). I watched all videos till inclusive GLAD.
 
 ## Setup
-To install the engine you have to clone this repository to your computer. Then you have to execute the following steps:
+To install the engine you have to clone this repository to your computer with git clone --recursive <path>. Then you have to execute the following steps:
 * Execute the GenerateProjects.bat script
 * Open Visual Studio
 * Build, compile the project and then the engine is starting
