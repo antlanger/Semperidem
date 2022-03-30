@@ -6,12 +6,14 @@ It is written in C++ and it is my first attempt creating a game engine.
 I followed the instructions of "The Cherno" on [Youtube](https://www.youtube.com/watch?v=JxIZbV_XjAs&list=PLlrATfBNZ98dC-V-N3m0Go4deliWHPFwT). I watched all videos till inclusive GLAD.
 
 ## Setup
-To install the engine you have to clone this repository to your computer with git clone --recursive <path>. Then you have to execute the following steps:
+To build and compile this project you will need **Visual Studio 2019**.
+To install the engine you have to clone this repository to your computer with **git clone --recursive \<path\>**. 
+Then you have to execute the following steps:
 * Execute the GenerateProjects.bat script
-* Open Visual Studio
+* Open Visual Studio 2019
 * Build, compile the project and then the engine is starting
 
-Additionally you will find the executable-file in \bin\Debug-windows-x86_64\Sandbox.
+After you compiled it once, you will find an executable-file in **\bin\Debug-windows-x86_64\Sandbox**.
 
 ## What you will see
 When you execute the executable-file or you start the engine in Visual Studio a console and a window will be opened.
@@ -21,7 +23,7 @@ In the console you will see
 * a message which indicates that the engine is starting
 * logs of events, which will either be KeyEvents, MouseEvents, ApplicationEvents, or logs of an example layer called Semperidem_Example_Layer. This layer will be called every frame (OnUpdate).
 
-When you want to shutdown the engine, just click the red cross on the windwo tab.
+When you want to shutdown the engine, just click the cross on the windwo tab.
 
 ![Window](https://user-images.githubusercontent.com/91611690/160697302-7a0348f4-d357-464f-a580-6760b5a36703.PNG)
 ![Console](https://user-images.githubusercontent.com/91611690/160697314-a2be4af1-fbb8-478d-ba1b-0d1389935d4e.PNG)
