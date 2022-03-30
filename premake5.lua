@@ -1,5 +1,6 @@
 workspace "Semperidem"
 	architecture "x64"
+	startproject "Sandbox"
 
 	configurations
 	{
@@ -63,6 +64,7 @@ project "Semperidem"
 
 		postbuildcommands
 		{
+			("{MKDIR} ../bin/" ..outputdir .."/Sandbox"),
 			("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox")
 		}
 
