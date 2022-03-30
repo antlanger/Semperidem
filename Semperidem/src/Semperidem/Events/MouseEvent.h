@@ -4,7 +4,7 @@
 
 namespace Semperidem {
 
-	//-------------------------------- MOUSE MOVED -----------------------------------
+//-------------------------------- MOUSE MOVED -----------------------------------
 	class SEMPERIDEM_API MouseMovedEvent : public Event
 	{
 	public:
@@ -28,7 +28,7 @@ namespace Semperidem {
 	};
 
 
-	//-------------------------------- MOUSE SCROLLED -----------------------------------
+//-------------------------------- MOUSE SCROLLED -----------------------------------
 	class SEMPERIDEM_API MouseScrolledEvent : public Event
 	{
 	public:
@@ -52,7 +52,7 @@ namespace Semperidem {
 	};
 
 
-	//-------------------------------- GENERAL MOUSE BUTTON -----------------------------------
+//-------------------------------- GENERAL MOUSE BUTTON -----------------------------------
 	class SEMPERIDEM_API MouseButtonEvent : public Event
 	{
 	public:
@@ -66,7 +66,7 @@ namespace Semperidem {
 	};
 
 
-	//-------------------------------- MOUSE BUTTON PRESSED -----------------------------------
+//-------------------------------- MOUSE BUTTON PRESSED -----------------------------------
 	class SEMPERIDEM_API MouseButtonPressedEvent : public MouseButtonEvent
 	{
 	public:
@@ -83,7 +83,7 @@ namespace Semperidem {
 	};
 
 
-	//-------------------------------- MOUSE BUTTON RELEASED -----------------------------------
+//-------------------------------- MOUSE BUTTON RELEASED -----------------------------------
 	class SEMPERIDEM_API MouseButtonReleasedEvent : public MouseButtonEvent
 	{
 	public:

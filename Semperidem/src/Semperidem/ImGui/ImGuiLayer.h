@@ -31,5 +31,4 @@ namespace Semperidem {
 		bool OnKeyTypedEvent(KeyTypedEvent& event);
 		bool OnWindowResizeEvent(WindowResizeEvent& event);
 	};
-
 }

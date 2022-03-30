@@ -4,8 +4,10 @@
 
 namespace Semperidem {
 
+//-------------------------------- GENERAL -----------------------------------
 	class SEMPERIDEM_API KeyEvent : public Event
 	{
+	
 	public:
 		inline int GetKeyCode() const { return m_KeyCode; }
 		EVENT_CLASS_CATEGORY(EventCategoryKeyboard | EventCategoryInput)
@@ -15,8 +17,11 @@ namespace Semperidem {
 		int m_KeyCode;
 	};
 
+
+//-------------------------------- KEY PRESSED -----------------------------------
 	class SEMPERIDEM_API KeyPressedEvent : public KeyEvent
 	{
+	
 	public:
 		KeyPressedEvent(int keycode, int repeatCount) : KeyEvent(keycode), m_RepeatCount(repeatCount) {}
 
@@ -34,6 +39,8 @@ namespace Semperidem {
 		int m_RepeatCount;
 	};
 
+
+//-------------------------------- KEY RELEASED -----------------------------------
 	class SEMPERIDEM_API KeyReleasedEvent : public KeyEvent
 	{
 	public:
@@ -49,6 +56,8 @@ namespace Semperidem {
 		EVENT_CLASS_TYPE(KeyReleased)
 	};
 
+
+//-------------------------------- KEY TYPED -----------------------------------
 	class SEMPERIDEM_API KeyTypedEvent : public KeyEvent
 	{
 	public:

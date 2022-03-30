@@ -22,10 +22,12 @@ namespace Semperidem {
 		MouseButtonPressed, MouseButtonReleased, MouseMoved, MouseScrolled
 	};
 
-	//We have this categories, because we may want to filter.
-	//We get all events from our application in some OnEvent-class, but for example we only want
-	//the keyboard events.
-	//We use the BIT, becuase an event can be included in multiple categories.
+	/*
+	* We have this categories, because we may want to filter.
+	* We get all events from our application in some OnEvent-class, but for example we only want
+	* the keyboard events.
+	* We use the BIT, becuase an event can be included in multiple categories.
+	*/
 	enum EventCategory
 	{
 		None = 0,
@@ -50,10 +52,12 @@ namespace Semperidem {
 
 #define EVENT_CLASS_CATEGORY(category) virtual int GetCategoryFlags() const override {return category; }
 
-	//-------------------------------- EVENT CLASS -----------------------------------
+
+//-------------------------------- EVENT CLASS -----------------------------------
 	class SEMPERIDEM_API Event
 	{
 		friend class EventDispatcher;
+	
 	public:
 		virtual EventType GetEventType() const = 0;
 		virtual const char* GetName() const = 0;
@@ -76,7 +80,7 @@ namespace Semperidem {
 
 
 
-	//-------------------------------- DISPATCHER CLASS -----------------------------------
+//-------------------------------- DISPATCHER CLASS -----------------------------------
 	/* Is used to dispatch events based on their type
 	* When OnEvent is called we receive our event as a reference of any type.
 	* An instance of the EventDispatcher is created.
@@ -108,11 +112,9 @@ namespace Semperidem {
 		Event& m_Event;
 	};
 
-
 	//For logging library to log events
 	inline std::ostream& operator<<(std::ostream& os, const Event& e)
 	{
 		return os << e.ToString();
 	}
-
 }

@@ -4,8 +4,8 @@
 
 namespace Semperidem {
 
-	//---------- WINDOW ----------------------------------------------------------------
-	//-------------------------------- WINDOW RESIZE -----------------------------------
+//---------- WINDOW ----------------------------------------------------------------
+//-------------------------------- WINDOW RESIZE -----------------------------------
 	class SEMPERIDEM_API WindowResizeEvent : public Event
 	{
 	public:
@@ -28,7 +28,7 @@ namespace Semperidem {
 	};
 
 
-	//-------------------------------- WINDOW CLOSE -----------------------------------
+//-------------------------------- WINDOW CLOSE -----------------------------------
 	class SEMPERIDEM_API WindowCloseEvent : public Event
 	{
 	public:
@@ -39,8 +39,8 @@ namespace Semperidem {
 	};
 
 
-	//---------- APPLICATION --------------------------------------------------------------	
-	//-------------------------------- APPLICATION TICK -----------------------------------
+//---------- APPLICATION --------------------------------------------------------------	
+//-------------------------------- APPLICATION TICK -----------------------------------
 	class SEMPERIDEM_API AppTickEvent : public Event
 	{
 	public:
@@ -51,7 +51,7 @@ namespace Semperidem {
 	};
 
 
-	//-------------------------------- APPLICATION UPDATE -----------------------------------
+//-------------------------------- APPLICATION UPDATE -----------------------------------
 	class SEMPERIDEM_API AppUpdateEvent : public Event
 	{
 	public:
@@ -62,7 +62,7 @@ namespace Semperidem {
 	};
 
 
-	//-------------------------------- APPLICATION RENDER -----------------------------------
+//-------------------------------- APPLICATION RENDER -----------------------------------
 	class SEMPERIDEM_API AppRenderEvent : public Event
 	{
 	public:

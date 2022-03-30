@@ -20,7 +20,7 @@
 	#define SI_CORE_ASSERT(x, ...)
 #endif
 
-//1 shifted by x spaces
+//1 shifted by x spaces, used in Event.h
 #define BIT(x) (1 << x)
 
 //For the ImGui events used in ImGuiLayer.cpp

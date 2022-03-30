@@ -2,6 +2,8 @@
 //relative paths.
 #include <Semperidem.h>
 
+
+//-------------------------------- EXAMPLE LAYER -----------------------------------
 class SemperidemLayer : public Semperidem::Layer
 {
 public:
@@ -18,6 +20,8 @@ public:
 	}
 };
 
+
+//-------------------------------- APPLICATION -----------------------------------
 class Sandbox : public Semperidem::Application
 {
 public:

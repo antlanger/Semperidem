@@ -48,7 +48,6 @@ namespace Semperidem {
 
 	void ImGuiLayer::OnUpdate()
 	{
-
 		//Get application and and set windowsize
 		ImGuiIO& io = ImGui::GetIO();
 		Application& app = Application::Get();
@@ -92,7 +91,7 @@ namespace Semperidem {
 		ImGuiIO& io = ImGui::GetIO();
 		io.MouseDown[event.GetMouseButton()] = true;
 
-		//False, because we haven't handle this
+		//False, because we haven't handled this
 		//Maybe we want that other layers are handling the events
 		return false;
 	}
@@ -123,7 +122,7 @@ namespace Semperidem {
 	}
 
 
-	//-------------------------------- KEY EVENTS -----------------------------------
+//-------------------------------- KEY EVENTS -----------------------------------
 	bool ImGuiLayer::OnKeyPressedEvent(KeyPressedEvent& event)
 	{
 		ImGuiIO& io = ImGui::GetIO();
@@ -159,7 +158,7 @@ namespace Semperidem {
 	}
 
 
-	//-------------------------------- WINDOW EVENTS -----------------------------------
+//-------------------------------- WINDOW EVENTS -----------------------------------
 	bool ImGuiLayer::OnWindowResizeEvent(WindowResizeEvent& event)
 	{
 		ImGuiIO& io = ImGui::GetIO();
