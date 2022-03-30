@@ -7,7 +7,7 @@ I followed the instructions of "The Cherno" on [Youtube](https://www.youtube.com
 
 ## Setup
 To build and compile this project you will need **Visual Studio 2019**.
-To install the engine you have to clone this repository to your computer with **git clone --recursive \<path to repo\>**. 
+To install the engine you have to clone this repository to your computer with **git clone --recursive https://github.com/antlanger/Semperidem**. 
 Then you have to execute the following steps:
 * Execute the GenerateProjects.bat script
 * Open the solution Semperidem.sln in Visual Studio 2019.
