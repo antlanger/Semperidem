@@ -7,6 +7,7 @@
 #include "Semperidem/Application.h"
 #include "Semperidem/Layer.h"
 #include "Semperidem/Log.h"
+#include "Semperidem/ImGui/ImGuiLayer.h"
 
 //-------------------------------- ENTRY POINT ----------------------------------
 //Everything has to be above the Entry Point --> when at the bottom it will throw errors

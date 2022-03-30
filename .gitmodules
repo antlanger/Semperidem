@@ -7,3 +7,6 @@
 [submodule "Semperidem/vendor/GLFW"]
 	path = Semperidem/vendor/GLFW
 	url = https://github.com/TheCherno/GLFW
+[submodule "Semperidem/vendor/imgui"]
+	path = Semperidem/vendor/imgui
+	url = https://github.com/TheCherno/imgui

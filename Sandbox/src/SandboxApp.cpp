@@ -24,6 +24,7 @@ public:
 	Sandbox() 
 	{
 		PushLayer(new SemperidemLayer());
+		PushOverlay(new Semperidem::ImGuiLayer());
 	}
 
 	~Sandbox() {}

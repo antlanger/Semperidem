@@ -4,6 +4,9 @@
     <Filter Include="Platform">
       <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform\OpenGL">
+      <UniqueIdentifier>{1E7D2C1D-8A08-9AE1-9319-1DD6FF23F6E1}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Platform\Windows">
       <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
     </Filter>
@@ -13,8 +16,14 @@
     <Filter Include="Semperidem\Events">
       <UniqueIdentifier>{14CCF512-80E2-F3A8-C959-7FCA35AFC430}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Semperidem\ImGui">
+      <UniqueIdentifier>{5A4FED5D-4648-0CB0-6F7A-F1345BD2EBBB}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOoenGL.h">
+      <Filter>Platform\OpenGL</Filter>
+    </ClInclude>
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
       <Filter>Platform\Windows</Filter>
     </ClInclude>
@@ -40,6 +49,9 @@
     <ClInclude Include="src\Semperidem\Events\MouseEvent.h">
       <Filter>Semperidem\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Semperidem\ImGui\ImGuiLayer.h">
+      <Filter>Semperidem\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\Semperidem\Layer.h">
       <Filter>Semperidem</Filter>
     </ClInclude>
@@ -53,13 +65,20 @@
       <Filter>Semperidem</Filter>
     </ClInclude>
     <ClInclude Include="src\sipch.h" />
+    <ClInclude Include="src\Platform\OpenGL\imgui_impl_opengl3_loader.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGL.cpp">
+      <Filter>Platform\OpenGL</Filter>
+    </ClCompile>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
       <Filter>Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\Semperidem\Application.cpp">
       <Filter>Semperidem</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Semperidem\ImGui\ImGuiLayer.cpp">
+      <Filter>Semperidem\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\Semperidem\Layer.cpp">
       <Filter>Semperidem</Filter>

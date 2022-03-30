@@ -17,11 +17,17 @@ namespace Semperidem {
 		void PushLayer(Layer* layer);
 		void PushOverlay(Layer* overlay);
 
+		static inline Application& Get() { return *s_Instance; }
+		inline Window& GetWindow() { return *m_Window; }
+
 	private:
 		std::unique_ptr<Window> m_Window;
 		bool m_Running = true;
 		bool OnWindowClose(WindowCloseEvent& event);
 		LayerStack m_LayerStack;
+
+	private:
+		static Application* s_Instance;
 	};
 
 	Application* CreateApplication();
