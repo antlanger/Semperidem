@@ -23,3 +23,6 @@
 //1 shifted by x spaces
 #define BIT(x) (1 << x)
 
+//For the ImGui events used in ImGuiLayer.cpp
+#define SI_BIND_EVENT_FN(fn)(std::bind(&fn, this, std::placeholders::_1))
+
